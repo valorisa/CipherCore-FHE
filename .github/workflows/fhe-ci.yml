@@ -1,0 +1,13 @@
+name: FHE CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with SEAL
+        run: |
+          cmake -B build -S .
+          cmake --build build

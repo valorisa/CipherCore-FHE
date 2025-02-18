@@ -1,0 +1,17 @@
+# Build
+build/
+*.a
+*.so
+*.dylib
+
+# Environnements
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Données sensibles
+*.key
+*.secret
