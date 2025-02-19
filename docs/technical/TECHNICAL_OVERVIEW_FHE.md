@@ -7,7 +7,6 @@ C -->|Addition| D[Résultat Crypté]
 C -->|Multiplication| D
 D -->|Déchiffrement| E[Résultat Clair]
 
-text
 
 ## Concepts Clés
 
@@ -23,7 +22,6 @@ ct = Ciphertext.encrypt(5)
 ct = ct * 3 # Bruit accumulé ↑
 ct = bootstrap(ct) # Réinitialise le bruit
 
-text
 
 ## Benchmark des Bibliothèques (2025)
 
@@ -47,7 +45,6 @@ fhe_compute --task "SUM(col1)" --nodes 5 --encrypted encrypted.fhe
 4. Déchiffrement final
 fhe_decrypt --key secret.key --result result.fhe
 
-text
 
 ## Intégration DevOps
 
@@ -60,7 +57,6 @@ RUN pip install -r requirements.txt
 Active l'accélération GPU
 ENV TFHE_GPU_ENABLED=1
 
-text
 
 ### CI/CD avec FHE
 jobs:
@@ -72,7 +68,6 @@ uses: seal-dev/build-action@v3
 with:
 scheme: ckks
 
-text
 
 ## Références Techniques
 1. [TFHE Documentation](https://docs.zama.ai/tfhe) - Zama, 2025
