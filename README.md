@@ -35,12 +35,17 @@ CipherCore-FHE/
 
 
 ## Démarrage Rapide (Ubuntu)
+```bash
 git clone --recursive https://github.com/votrecompte/CipherCore-FHE
-cd CipherCore-FHE
-make deps # Installe SEAL et OpenFHE
-make build # Compile le projet
-make test # Exécute les tests
 
+cd CipherCore-FHE
+
+make deps # Installe SEAL et OpenFHE
+
+make build # Compile le projet
+
+make test # Exécute les tests
+```
 
 ## Exemple : Addition Homomorphe
 #include "ciphercore.hpp"
