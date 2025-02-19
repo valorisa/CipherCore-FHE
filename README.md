@@ -52,6 +52,7 @@ make test # Exécute les tests
 ```
 
 ## Exemple : Addition Homomorphe
+```cpp
 #include "ciphercore.hpp"
 
 int main() {
@@ -66,7 +67,7 @@ auto encY = ctx.encrypt(y);
 auto encResult = encX + encY;
 std::cout << "Résultat déchiffré : " << ctx.decrypt(encResult) << std::endl;
 }
-
+```
 
 ## Contribution
 1. 🍴 Fork du dépôt
