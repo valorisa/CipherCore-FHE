@@ -1,6 +1,6 @@
 # CipherCore-FHE 🔒🔑
 
-**Librairie open-source pour expérimenter la cryptographie homomorphe (FHE)**  
+**Librairie open-source pour expérimenter la cryptographie homomorphe (Fully Homomorphic Encryption)**  
 *Protégez vos calculs sensibles sans déchiffrer les données*
 
 ## Fonctionnalités Clés
