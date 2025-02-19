@@ -33,7 +33,6 @@ CipherCore-FHE/
 ├── .gitignore
 └── LICENSE # Licence Apache 2.0
 
-text
 
 ## Démarrage Rapide (Ubuntu)
 git clone --recursive https://github.com/votrecompte/CipherCore-FHE
@@ -42,7 +41,6 @@ make deps # Installe SEAL et OpenFHE
 make build # Compile le projet
 make test # Exécute les tests
 
-text
 
 ## Exemple : Addition Homomorphe
 #include "ciphercore.hpp"
@@ -51,7 +49,7 @@ int main() {
 auto ctx = CipherCore::Context(CipherCore::Scheme::CKKS);
 ctx.genKeys();
 
-text
+
 double x = 3.5, y = 7.1;
 auto encX = ctx.encrypt(x);
 auto encY = ctx.encrypt(y);
@@ -60,7 +58,6 @@ auto encResult = encX + encY;
 std::cout << "Résultat déchiffré : " << ctx.decrypt(encResult) << std::endl;
 }
 
-text
 
 ## Contribution
 1. 🍴 Fork du dépôt
