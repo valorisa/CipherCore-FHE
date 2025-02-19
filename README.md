@@ -11,6 +11,7 @@
 - 📊 Benchmarks automatisés avec Grafana
 
 ## Structure du Projet
+```bash
 CipherCore-FHE/
 ├── src/
 │ ├── core/ # Code C++ principal
@@ -32,7 +33,7 @@ CipherCore-FHE/
 ├── Makefile # Commandes utilitaires
 ├── .gitignore
 └── LICENSE # Licence Apache 2.0
-
+```
 
 ## Démarrage Rapide (Ubuntu)
 ```bash
