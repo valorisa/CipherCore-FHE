@@ -10,7 +10,6 @@
 └── assets/
 └── sector_analysis/ # Diagrammes sectoriels
 
-text
 
 ## Secteurs à Fort Impact
 
@@ -20,7 +19,6 @@ pie title Applications FHE en Santé
 "Télémédecine" : 33
 "Recherche Clinique" : 25
 
-text
 
 ### 💰 Finance Privée
 - **Scoring Crypté** : Modèles FHE réduisant les fuites de données de 89% ([Banque de France, 2024](https://example.com))
@@ -44,7 +42,6 @@ votes_chiffres = [ctx.encrypt(1), ctx.encrypt(0)] # 1 = Oui, 0 = Non
 total = sum(votes_chiffres)
 print("Résultat:", ctx.decrypt(total)) # Output: 1
 
-text
 
 ## Défis par Industrie
 Cloud : Accélération matérielle (FPGA)
@@ -53,7 +50,6 @@ IoT : Limitation énergétique
 
 Blockchain : Intégration ZKProof
 
-text
 
 ## Références Clés
 1. [RGPD & FHE](https://www.cnil.fr) - CNIL
