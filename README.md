@@ -36,7 +36,7 @@ CipherCore-FHE/
 
 ## Démarrage Rapide (Ubuntu)
 ```bash
-git clone --recursive https://github.com/votrecompte/CipherCore-FHE
+git clone --recursive https://github.com/valorisa/CipherCore-FHE
 
 cd CipherCore-FHE
 
