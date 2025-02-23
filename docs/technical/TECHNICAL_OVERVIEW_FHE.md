@@ -1,12 +1,13 @@
 # Architecture Technique de la Cryptographie Homomorphe (2025)
 
 graph TD
+```
 A[Données Clair] -->|Chiffrement| B((Données Cryptées))
 B --> C{Opérations Homomorphes}
 C -->|Addition| D[Résultat Crypté]
 C -->|Multiplication| D
 D -->|Déchiffrement| E[Résultat Clair]
-
+```
 
 ## Concepts Clés
 
@@ -34,21 +35,26 @@ ct = bootstrap(ct) # Réinitialise le bruit
 ## Workflow Type
 
 1. Génération des clés
+```
 fhe_keygen --scheme ckks --params params.json
-
+```
 2. Chiffrement des données
+```
 fhe_encrypt --input data.csv --output encrypted.fhe
-
+```
 3. Calcul distribué
+```
 fhe_compute --task "SUM(col1)" --nodes 5 --encrypted encrypted.fhe
-
-4. Déchiffrement final
+```
+5. Déchiffrement final
+```
 fhe_decrypt --key secret.key --result result.fhe
-
+```
 
 ## Intégration DevOps
 
 ### Template Docker
+```
 FROM fhe-baseimage:2025
 
 COPY requirements.txt .
@@ -56,7 +62,7 @@ RUN pip install -r requirements.txt
 
 Active l'accélération GPU
 ENV TFHE_GPU_ENABLED=1
-
+```
 
 ### CI/CD avec FHE
 jobs:
