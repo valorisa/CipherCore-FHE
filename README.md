@@ -76,4 +76,4 @@ std::cout << "Résultat déchiffré : " << ctx.decrypt(encResult) << std::endl;
 4. 🚀 Push vers la branche
 5. 🔄 Soumettez une Pull Request
 
-*Licence : Apache 2.0 | Maintenu par valorisa avec ❤️*
+*Licence : Apache 2.0 | Maintenu par valorisa*
